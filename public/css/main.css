@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 #campo-digitar,
@@ -158,7 +157,39 @@ small {
 #image-principal {
   height: 300px;
   padding-top: 1px;
-  background: #e8eced url('../images/marcelo.jpg') no-repeat center;
+  background: #292b2b url('../images/feira.jpg') no-repeat center;
+}
+
+#maca-principal {
+  height: 230px;
+  width: 200px;
+  padding-top: 1px;
+  float: right;
+  background: #292b2b url('../images/maça.png') no-repeat center;
+}
+
+#banana-principal {
+  height: 230px;
+  width: 200px;
+  padding-top: 1px;
+  float: right;
+  background: #292b2b url('../images/banana.png') no-repeat center;
+}
+
+#melancia-principal {
+  height: 230px;
+  width: 200px;
+  padding-top: 1px;
+  float: right;
+  background: #292b2b url('../images/melancia.png') no-repeat center;
+}
+
+#pera-principal {
+  height: 230px;
+  width: 200px;
+  padding-top: 1px;
+  float: right;
+  background: #292b2b url('../images/pera.png') no-repeat center;
 }
 
 #image-principal div h2 {
@@ -216,6 +247,8 @@ small {
   padding: 60px 0;
   text-align: center;
 }
+
+
 
 #conteudo-principal h3 {
   display: block;
