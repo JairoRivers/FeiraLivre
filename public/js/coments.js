@@ -4,9 +4,22 @@ function abrirAbaDigitar() {
 }
 
 function addComentario() {
-    var ing = document.getElementById("coment").value;
-    var comentarios = document.getElementById("comentarios").innerHTML;
-    comentarios = comentarios + "<p>" + ing + "</p>";
+    var ing = document.getElementById("campo-digitar").value;
+    var comentario = document.createElement("span");
+    comentario.className = "comentario";
+    comentario.textContent = ing + " "; // Adiciona um espaço em branco após cada comentário
 
-    document.getElementById("comentarios").innerHTML = comentarios;
+    document.getElementById("comentarios").appendChild(comentario);
+
+    // Desativa o botão após o envio do comentário
+    var botaoComentario = document.getElementById("botao-comentario");
+    botaoComentario.disabled = true;
+
+    // Exibe o popup de erro ao clicar no botão desabilitado
+    botaoComentario.onclick = function () {
+        if (botaoComentario.disabled) {
+            alert("Erro: Não é possível adicionar mais comentários.");
+        }
+    };
+
 }
