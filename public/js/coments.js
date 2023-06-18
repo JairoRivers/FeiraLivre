@@ -16,10 +16,13 @@ function addComentario() {
     botaoComentario.disabled = true;
 
     // Exibe o popup de erro ao clicar no botão desabilitado
-    botaoComentario.onclick = function () {
-        if (botaoComentario.disabled) {
-            alert("Erro: Não é possível adicionar mais comentários.");
-        }
-    };
+    botaoComentario.addEventListener("click", function () {
+        alert("Erro: Não é possível adicionar mais comentários.");
+    });
+
+
+
+    document.getElementById("campo-digitar").value = "";
+
 
 }
